@@ -1,0 +1,696 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-20 03:53:35.966084704 UTC
+
+interface HaScheme-0.1.0.0-IJwmEsD2WSkAN9S6TT5ZOb:Scheme 8002
+  interface hash: cbb0f56e867794baa0b4bd3f7ae2e45b
+  ABI hash: f00f1f1549a464c15cded659e43c2e4a
+  export-list hash: 7dc549944ec4f5bf83bea408eb992afd
+  orphan hash: d9856c8b1674c005fa4bc63372826a91
+  flag hash: 153a5c3b51aaf919dcf8055c55bf50d7
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Scheme.eval
+  Scheme.extractValue
+  Scheme.readExpr
+  Scheme.symbol
+  Scheme.trapError
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:Data.Either 20b09ef8d0a5b74fdec011c40c1587f5
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Maybe d876c4ffe4b3c43755a781e8ad860d88
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:Data.Traversable 556020d7cf3c4a34a774600512918a37
+import  -/  base-4.9.1.0:Data.Tuple 7dc4bbb45d2e69c991ffac438beeca11
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Numeric bdcfa841811670500691657d058d32ea
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.Environment 08cb808e8e6a7821e6f8cfa76a977431
+import  -/  base-4.9.1.0:Text.Read 75c59863e882ebaec4532e9465e2ee9b
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+import  -/  mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6:Control.Monad.Error.Class 635294424a2da8269902789f5c8bbe99
+import  -/  mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6:Control.Monad.Except 3bb0e2598193c1ba00c9723945e93004
+import  -/  parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX:Text.Parsec.Char 72183c9c72a786c768d574329f0c66fb
+import  -/  parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX:Text.Parsec.Combinator 1043ef2e7d611405e8cfba488439d00f
+import  -/  parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX:Text.Parsec.Error c39b2f8c987feda2c6bcb29752686ed7
+import  -/  parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX:Text.Parsec.Prim aa5741b3687798626ab8b304ae778581
+import  -/  parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX:Text.Parsec.String c167df93b2a6f15c5a411724e2ca0d74
+import  -/  parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX:Text.ParserCombinators.Parsec 210b9d7605a419b0319331228e92273a
+import  -/  parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX:Text.ParserCombinators.Parsec.Prim c1c3ee4c3eb13baea753600678a3bd4e
+fd7fc694242c5a9f125280b091cb881c
+  $fShowLispError :: GHC.Show.Show Scheme.LispError
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Scheme.LispError
+                  Scheme.$fShowLispError_$cshowsPrec
+                  Scheme.$fShowLispError_$cshow
+                  Scheme.$fShowLispError_$cshowList -}
+fd7fc694242c5a9f125280b091cb881c
+  $fShowLispError1 ::
+    Scheme.LispError -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (x1 :: Scheme.LispError)
+                   (s :: GHC.Base.String)[OneShot] ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (Scheme.$fShowLispError_$cshow x1)
+                   s) -}
+fd7fc694242c5a9f125280b091cb881c
+  $fShowLispError_$cshow :: Scheme.LispError -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U> -}
+fd7fc694242c5a9f125280b091cb881c
+  $fShowLispError_$cshowList :: [Scheme.LispError] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [Scheme.LispError]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Scheme.LispError
+                   Scheme.$fShowLispError1
+                   ls
+                   s) -}
+fd7fc694242c5a9f125280b091cb881c
+  $fShowLispError_$cshowsPrec ::
+    GHC.Types.Int -> Scheme.LispError -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (x1 :: Scheme.LispError)
+                   (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n2 :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n2
+                      (Scheme.$fShowLispError_$cshow x1))
+                   s) -}
+be6812a219946ac8a4944994ffd3b5c0
+  $fShowLispVal :: GHC.Show.Show Scheme.LispVal
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Scheme.LispVal
+                  Scheme.$fShowLispVal_$cshowsPrec
+                  Scheme.showVal
+                  Scheme.$fShowLispVal_$cshowList -}
+be6812a219946ac8a4944994ffd3b5c0
+  $fShowLispVal1 ::
+    Scheme.LispVal -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (x1 :: Scheme.LispVal)
+                   (s :: GHC.Base.String)[OneShot] ->
+                 GHC.Base.++ @ GHC.Types.Char (Scheme.showVal x1) s) -}
+be6812a219946ac8a4944994ffd3b5c0
+  $fShowLispVal_$cshowList :: [Scheme.LispVal] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [Scheme.LispVal]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Scheme.LispVal Scheme.$fShowLispVal1 ls s) -}
+be6812a219946ac8a4944994ffd3b5c0
+  $fShowLispVal_$cshowsPrec ::
+    GHC.Types.Int -> Scheme.LispVal -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (x1 :: Scheme.LispVal)
+                   (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n2 :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c n2 (Scheme.showVal x1))
+                   s) -}
+6a6826a512de3f4f3462d062170aae15
+  $s$fStream[]mtok ::
+    Text.Parsec.Prim.Stream [tok] Data.Functor.Identity.Identity tok
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ tok.
+                  @ [tok]
+                  @ Data.Functor.Identity.Identity
+                  @ tok
+                  (Scheme.$s$fStream[]mtok_$s$fStream[]mtok_$cp1Stream @ tok)
+                  (Scheme.$s$fStream[]mtok_$s$fStream[]mtok_$cuncons @ tok) -}
+b4a312f0563fd43cab9a066400c72fdd
+  $s$fStream[]mtok_$s$fStream[]mtok_$cp1Stream ::
+    GHC.Base.Monad Data.Functor.Identity.Identity
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ tok -> Data.Functor.Identity.$fMonadIdentity) -}
+02a766d7172fd38df7471458fdc3ea14
+  $s$fStream[]mtok_$s$fStream[]mtok_$cuncons ::
+    [tok]
+    -> Data.Functor.Identity.Identity (GHC.Base.Maybe (tok, [tok]))
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ tok (ds :: [tok]) ->
+                 case ds of wild {
+                   []
+                   -> GHC.Base.$
+                        @ 'GHC.Types.PtrRepLifted
+                        @ (GHC.Base.Maybe (tok, [tok]))
+                        @ (Data.Functor.Identity.Identity (GHC.Base.Maybe (tok, [tok])))
+                        (Data.Functor.Identity.$fApplicativeIdentity_$cpure
+                           @ (GHC.Base.Maybe (tok, [tok])))
+                        (GHC.Base.Nothing @ (tok, [tok]))
+                   : t ts
+                   -> GHC.Base.$
+                        @ 'GHC.Types.PtrRepLifted
+                        @ (GHC.Base.Maybe (tok, [tok]))
+                        @ (Data.Functor.Identity.Identity (GHC.Base.Maybe (tok, [tok])))
+                        (Data.Functor.Identity.$fApplicativeIdentity_$cpure
+                           @ (GHC.Base.Maybe (tok, [tok])))
+                        (GHC.Base.Just @ (tok, [tok]) (t, ts)) }) -}
+fa446a5478692d689cbb391f5562498b
+  $tc'AnyUnpacker :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9971884317354765648##
+                   8693631850910196213##
+                   Scheme.$trModule
+                   Scheme.$tc'AnyUnpacker1) -}
+5cb0ab00d4da9e745cb703aa07a32566
+  $tc'AnyUnpacker1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'AnyUnpacker"#) -}
+5957c60f1373fa54c612e1f7da153529
+  $tc'Atom :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11137360972050683972##
+                   13355177843888491612##
+                   Scheme.$trModule
+                   Scheme.$tc'Atom1) -}
+4d15cfa4e37cc95f11101ee74ccea8bb
+  $tc'Atom1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Atom"#) -}
+d448680fb14b2f8dd1b253483b476eed
+  $tc'BadSpecialForm :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11519280486316958317##
+                   10730597699626520559##
+                   Scheme.$trModule
+                   Scheme.$tc'BadSpecialForm1) -}
+c552cb1506a9169cbdc3e4880a7089b8
+  $tc'BadSpecialForm1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'BadSpecialForm"#) -}
+2f57290c10e18917d9924d0113294255
+  $tc'Bool :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   865858159533427963##
+                   10741011282344359309##
+                   Scheme.$trModule
+                   Scheme.$tc'Bool1) -}
+eae4c7b91cb81df33beabe21ce10c169
+  $tc'Bool1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Bool"#) -}
+5d78671ab9b851c54924e6e7b7e5119a
+  $tc'Default :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14800172399640771435##
+                   12889695080217264919##
+                   Scheme.$trModule
+                   Scheme.$tc'Default1) -}
+b2f67937234c898a80299703c705457b
+  $tc'Default1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Default"#) -}
+b897ed3d32ae60e2e285eea1c1881387
+  $tc'DottedList :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3688099701199796679##
+                   12410880726500079805##
+                   Scheme.$trModule
+                   Scheme.$tc'DottedList1) -}
+553bd65cac807daf2c6eafce83084311
+  $tc'DottedList1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'DottedList"#) -}
+c6c88835d25d7521081858b54ed7970f
+  $tc'List :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1104013998592374059##
+                   11195687620212461796##
+                   Scheme.$trModule
+                   Scheme.$tc'List1) -}
+c36df5c6c035020a0a79a1388a38ce80
+  $tc'List1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'List"#) -}
+98ecbd101c02d3ed8b62d1df648fda04
+  $tc'NotFunction :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   946596481216729426##
+                   6383523315053523279##
+                   Scheme.$trModule
+                   Scheme.$tc'NotFunction1) -}
+d93d77cdb00e1d2b0e10428c6df8a8ec
+  $tc'NotFunction1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'NotFunction"#) -}
+ae8cd56283863ba6670f3633827758cd
+  $tc'NumArgs :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17336281315381658772##
+                   17959999975414239046##
+                   Scheme.$trModule
+                   Scheme.$tc'NumArgs1) -}
+8e0f268bbf51853a936eac6d365f8bbd
+  $tc'NumArgs1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'NumArgs"#) -}
+b3d0a8e6d16fb5bdebd097a20680ab27
+  $tc'Number :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12863438642033529743##
+                   4399972282368866084##
+                   Scheme.$trModule
+                   Scheme.$tc'Number1) -}
+128ddf1300136604ae595093f2fa691d
+  $tc'Number1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Number"#) -}
+4ec6a0e22aa373b2e98577c41f2a4c99
+  $tc'Parser :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9967750884573007296##
+                   4157866987255303998##
+                   Scheme.$trModule
+                   Scheme.$tc'Parser1) -}
+20036bf073c57f5f74b86d5bdf526bc5
+  $tc'Parser1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Parser"#) -}
+145bbae2e1d6d67d7ced13dcc5efbe0b
+  $tc'String :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15784960721162207102##
+                   8929646044359776222##
+                   Scheme.$trModule
+                   Scheme.$tc'String1) -}
+e5a9d02146f95b281f9d6328e2fa0495
+  $tc'String1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'String"#) -}
+cd1eddccb9006fee2b8d7edb7acf4d0d
+  $tc'TypeMismatch :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17469861969774135081##
+                   626871069925138855##
+                   Scheme.$trModule
+                   Scheme.$tc'TypeMismatch1) -}
+005e1ee73cc2193f8e01d1ebc5348965
+  $tc'TypeMismatch1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'TypeMismatch"#) -}
+21342cba07254b17f0f5aa5632e77fb7
+  $tc'UnboundVar :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7786504602773693356##
+                   1920802329747967473##
+                   Scheme.$trModule
+                   Scheme.$tc'UnboundVar1) -}
+6ca34b2adfe25d57475b42dc966d52c7
+  $tc'UnboundVar1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'UnboundVar"#) -}
+8600b7b0f3137f7200a0a6a369da563e
+  $tcLispError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11166935758554699081##
+                   16764251655432298190##
+                   Scheme.$trModule
+                   Scheme.$tcLispError1) -}
+7da1522dac877e1c688f6f5a38c31e8a
+  $tcLispError1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "LispError"#) -}
+531d9a6b783dacf496a21d82330fcb45
+  $tcLispVal :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17270379504412368969##
+                   16650859284099580025##
+                   Scheme.$trModule
+                   Scheme.$tcLispVal1) -}
+31d61316e7638f5b6872eccdc57de17c
+  $tcLispVal1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "LispVal"#) -}
+e3d1ead80c181ed8ebc91fc524fe1c85
+  $tcUnpacker :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5649363003076352965##
+                   17682069904678533637##
+                   Scheme.$trModule
+                   Scheme.$tcUnpacker1) -}
+e205088208ec695b67796264c3fed90f
+  $tcUnpacker1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Unpacker"#) -}
+b4c569b5d80c85d4dd5f06f092b06bd5
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Scheme.$trModule2
+                   Scheme.$trModule1) -}
+c552628085489ec1dd20d362f8b195df
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Scheme"#) -}
+66c2861fd3458861af0c52e7e5e26f86
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "HaScheme-0.1.0.0-IJwmEsD2WSkAN9S6TT5ZOb"#) -}
+35583265bbd9129d2fca2605c4496d88
+  $wparseExpr ::
+    GHC.Base.String
+    -> Text.Parsec.Pos.SourceName
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> ()
+    -> (Scheme.LispVal
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Scheme.LispVal
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 9,
+     Strictness: <L,U><L,U><S,U><S,U><S,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Inline: [0] -}
+fd7fc694242c5a9f125280b091cb881c
+  data LispError
+    = NumArgs GHC.Integer.Type.Integer [Scheme.LispVal]
+    | TypeMismatch GHC.Base.String Scheme.LispVal
+    | Parser Text.Parsec.Error.ParseError
+    | BadSpecialForm GHC.Base.String Scheme.LispVal
+    | NotFunction GHC.Base.String GHC.Base.String
+    | UnboundVar GHC.Base.String GHC.Base.String
+    | Default GHC.Base.String
+be6812a219946ac8a4944994ffd3b5c0
+  data LispVal
+    = Atom GHC.Base.String
+    | List [Scheme.LispVal]
+    | DottedList [Scheme.LispVal] Scheme.LispVal
+    | Number GHC.Integer.Type.Integer
+    | String GHC.Base.String
+    | Bool GHC.Types.Bool
+0e9b4775b550a2f54256a5998a158d8e
+  type ThrowsError = Data.Either.Either Scheme.LispError :: * -> *
+a3f3a46dbd2db04bde3ce4873e949c9b
+  data Unpacker where
+    AnyUnpacker :: GHC.Classes.Eq a =>
+                   (Scheme.LispVal -> Scheme.ThrowsError a) -> Unpacker
+818c1975aaaec46eedf1f3dae5d26706
+  eval :: Scheme.LispVal -> Scheme.ThrowsError Scheme.LispVal
+  {- Arity: 1, Strictness: <S,1*U> -}
+c284d575dc5ce616c709f26936e5ad45
+  extractValue :: Scheme.ThrowsError a -> a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Data.Either.Either Scheme.LispError a) ->
+                 case ds of wild {
+                   Data.Either.Left ipv -> Scheme.extractValue1 @ a
+                   Data.Either.Right val -> val }) -}
+5dcadc86a0bc417b6fd837f426ba9858
+  extractValue1 :: a
+  {- Strictness: x -}
+6f3634d76145c6a9be6b578774f9a571
+  readExpr :: GHC.Base.String -> Scheme.ThrowsError Scheme.LispVal
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (input :: GHC.Base.String) ->
+                 case (Text.Parsec.Prim.runPT
+                         @ GHC.Base.String
+                         @ Data.Functor.Identity.Identity
+                         @ GHC.Types.Char
+                         @ ()
+                         @ Scheme.LispVal
+                         (Scheme.$s$fStream[]mtok @ GHC.Types.Char)
+                         Scheme.readExpr2
+                           `cast`
+                         (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                                   <GHC.Base.String>_R
+                                   <()>_R
+                                   <Data.Functor.Identity.Identity>_R
+                                   <Scheme.LispVal>_R))
+                         GHC.Tuple.()
+                         Scheme.readExpr1
+                         input)
+                        `cast`
+                      (Data.Functor.Identity.N:Identity[0]
+                           <Data.Either.Either
+                              Text.Parsec.Error.ParseError Scheme.LispVal>_R) of wild {
+                   Data.Either.Left err
+                   -> Data.Either.Left
+                        @ Scheme.LispError
+                        @ Scheme.LispVal
+                        (Scheme.Parser err)
+                   Data.Either.Right val
+                   -> Data.Either.Right @ Scheme.LispError @ Scheme.LispVal val }) -}
+99dd611e4072453fbe85218d9f823ae9
+  readExpr1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "lisp"#) -}
+09593ebf8160b73019700e00115dc575
+  readExpr2 ::
+    Text.Parsec.Prim.State GHC.Base.String ()
+    -> (Scheme.LispVal
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Scheme.LispVal
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <S(LS(LSS)S),1*U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b
+                   (w :: Text.Parsec.Prim.State GHC.Base.String ())
+                   (w1 :: Scheme.LispVal
+                          -> Text.Parsec.Prim.State GHC.Base.String ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w2 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w3 :: Scheme.LispVal
+                          -> Text.Parsec.Prim.State GHC.Base.String ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w4 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b) ->
+                 case w of ww { Text.Parsec.Prim.State ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Text.Parsec.Pos.SourcePos ww5 ww6 ww7 ->
+                 Scheme.$wparseExpr @ b ww1 ww5 ww6 ww7 ww3 w1 w2 w3 w4 } }) -}
+be6812a219946ac8a4944994ffd3b5c0
+  showVal :: Scheme.LispVal -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U> -}
+1028045dbbbb5882e53dbe007a75064a
+  symbol :: Text.Parsec.String.Parser GHC.Types.Char
+  {- Arity: 5,
+     Strictness: <S(LS(LSS)S),1*U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,A><L,A><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Scheme.symbol1
+                  `cast`
+                (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <GHC.Types.Char>_R)) -}
+9fbca6b84074f834922b85c65abca815
+  symbol1 ::
+    Text.Parsec.Prim.State GHC.Base.String ()
+    -> (GHC.Types.Char
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (GHC.Types.Char
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <S(LS(LSS)S),1*U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,A><L,A><L,C(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b
+                   (w :: Text.Parsec.Prim.State GHC.Base.String ())
+                   (w1 :: GHC.Types.Char
+                          -> Text.Parsec.Prim.State GHC.Base.String ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w2 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w3 :: GHC.Types.Char
+                          -> Text.Parsec.Prim.State GHC.Base.String ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w4 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b) ->
+                 case w of ww { Text.Parsec.Prim.State ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Text.Parsec.Pos.SourcePos ww5 ww6 ww7 ->
+                 Text.Parsec.Char.$wsatisfy
+                   @ GHC.Base.String
+                   @ Data.Functor.Identity.Identity
+                   @ ()
+                   (Scheme.$s$fStream[]mtok @ GHC.Types.Char)
+                   Scheme.symbol2
+                   @ b
+                   ww1
+                   ww5
+                   ww6
+                   ww7
+                   ww3
+                   w1
+                   w4 } }) -}
+8d465123f3f672ddc867389accb4b3dd
+  symbol2 :: GHC.Types.Char -> GHC.Types.Bool
+  {- Arity: 1,
+     Unfolding: (\ (c :: GHC.Types.Char) ->
+                 GHC.List.elem
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   c
+                   Scheme.symbol3) -}
+7a8cc5278b1b6d1d8842a540f58892a9
+  symbol3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "!$%&|*+-/:<=>?@^_~"#) -}
+db8931b307f9cfa6e12e9dc7441c1ef7
+  trapError ::
+    (GHC.Show.Show a, Control.Monad.Error.Class.MonadError a m) =>
+    m GHC.Base.String -> m GHC.Base.String
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*U,A)><S(LLC(C(S))),U(1*U,A,1*C1(C1(U)))><L,U>,
+     Unfolding: (\ @ a
+                   @ (m :: * -> *)
+                   ($dShow :: GHC.Show.Show a)
+                   ($dMonadError :: Control.Monad.Error.Class.MonadError a m)
+                   (eta :: m GHC.Base.String) ->
+                 Control.Monad.Error.Class.catchError
+                   @ a
+                   @ m
+                   $dMonadError
+                   @ GHC.Base.String
+                   eta
+                   (let {
+                      f :: GHC.Base.Monad m
+                      = Control.Monad.Error.Class.$p1MonadError @ a @ m $dMonadError
+                    } in
+                    let {
+                      f1 :: GHC.Base.String -> m GHC.Base.String
+                      = GHC.Base.return @ m f @ GHC.Base.String
+                    } in
+                    let {
+                      g :: a -> GHC.Base.String = GHC.Show.show @ a $dShow
+                    } in
+                    \ (x1 :: a) -> f1 (g x1))) -}
+instance [safe] GHC.Show.Show [Scheme.LispError]
+  = Scheme.$fShowLispError
+instance [safe] GHC.Show.Show [Scheme.LispVal]
+  = Scheme.$fShowLispVal
+"SPEC/Scheme $fStream[]mtok @ Identity _" [ALWAYS] forall @ tok
+                                                          ($dMonad :: GHC.Base.Monad
+                                                                        Data.Functor.Identity.Identity)
+  Text.Parsec.Prim.$fStream[]mtok @ Data.Functor.Identity.Identity
+                                  @ tok
+                                  $dMonad
+  = Scheme.$s$fStream[]mtok @ tok
+"SPEC/Scheme $fStream[]mtok_$cp1Stream @ Identity _" [ALWAYS] forall @ tok
+                                                                     ($dMonad :: GHC.Base.Monad
+                                                                                   Data.Functor.Identity.Identity)
+  Text.Parsec.Prim.$fStream[]mtok_$cp1Stream @ Data.Functor.Identity.Identity
+                                             @ tok
+                                             $dMonad
+  = Scheme.$s$fStream[]mtok_$s$fStream[]mtok_$cp1Stream @ tok
+"SPEC/Scheme $fStream[]mtok_$cuncons @ Identity _" [ALWAYS] forall @ tok
+                                                                   ($dMonad :: GHC.Base.Monad
+                                                                                 Data.Functor.Identity.Identity)
+  Text.Parsec.Prim.$fStream[]mtok_$cuncons @ Data.Functor.Identity.Identity
+                                           @ tok
+                                           $dMonad
+  = Scheme.$s$fStream[]mtok_$s$fStream[]mtok_$cuncons @ tok
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
