@@ -1,8 +1,4 @@
 Configuring parsec-3.1.11...
-Cabal-simple_mPHDZzAJ_1.24.2.0_ghc-8.0.2: unable to decommit memory: Invalid argument
-Cabal-simple_mPHDZzAJ_1.24.2.0_ghc-8.0.2: unable to decommit memory: Invalid argument
-Cabal-simple_mPHDZzAJ_1.24.2.0_ghc-8.0.2: unable to decommit memory: Invalid argument
-Cabal-simple_mPHDZzAJ_1.24.2.0_ghc-8.0.2: unable to decommit memory: Invalid argument
 Building parsec-3.1.11...
 Preprocessing library parsec-3.1.11...
 [ 1 of 25] Compiling Text.Parsec.Pos  ( Text/Parsec/Pos.hs, .stack-work/dist/x86_64-linux-ncurses6-nopie/Cabal-1.24.2.0/build/Text/Parsec/Pos.o )
@@ -30,27 +26,6 @@ Preprocessing library parsec-3.1.11...
 [23 of 25] Compiling Text.ParserCombinators.Parsec.Language ( Text/ParserCombinators/Parsec/Language.hs, .stack-work/dist/x86_64-linux-ncurses6-nopie/Cabal-1.24.2.0/build/Text/ParserCombinators/Parsec/Language.o )
 [24 of 25] Compiling Text.Parsec.Perm ( Text/Parsec/Perm.hs, .stack-work/dist/x86_64-linux-ncurses6-nopie/Cabal-1.24.2.0/build/Text/Parsec/Perm.o )
 [25 of 25] Compiling Text.ParserCombinators.Parsec.Perm ( Text/ParserCombinators/Parsec/Perm.hs, .stack-work/dist/x86_64-linux-ncurses6-nopie/Cabal-1.24.2.0/build/Text/ParserCombinators/Parsec/Perm.o )
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-Cabal-simple_mPHDZzAJ_1.24.2.0_ghc-8.0.2: unable to decommit memory: Invalid argument
 Installing library in
 /home/promethorn/.stack/snapshots/x86_64-linux-ncurses6-nopie/lts-9.9/8.0.2/lib/x86_64-linux-ghc-8.0.2/parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX
-Cabal-simple_mPHDZzAJ_1.24.2.0_ghc-8.0.2: unable to decommit memory: Invalid argument
 Registering parsec-3.1.11...

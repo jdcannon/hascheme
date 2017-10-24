@@ -1,7 +1,4 @@
-Cabal-simple_mPHDZzAJ_1.24.2.0_ghc-8.0.2: unable to decommit memory: Invalid argument
 Configuring text-1.2.2.2...
-Cabal-simple_mPHDZzAJ_1.24.2.0_ghc-8.0.2: unable to decommit memory: Invalid argument
-Cabal-simple_mPHDZzAJ_1.24.2.0_ghc-8.0.2: unable to decommit memory: Invalid argument
 Building text-1.2.2.2...
 Preprocessing library text-1.2.2.2...
 [ 1 of 44] Compiling Data.Text.Internal.Unsafe.Shift ( Data/Text/Internal/Unsafe/Shift.hs, .stack-work/dist/x86_64-linux-ncurses6-nopie/Cabal-1.24.2.0/build/Data/Text/Internal/Unsafe/Shift.o )
@@ -48,30 +45,6 @@ Preprocessing library text-1.2.2.2...
 [42 of 44] Compiling Data.Text.Lazy.IO ( Data/Text/Lazy/IO.hs, .stack-work/dist/x86_64-linux-ncurses6-nopie/Cabal-1.24.2.0/build/Data/Text/Lazy/IO.o )
 [43 of 44] Compiling Data.Text.Lazy.Read ( Data/Text/Lazy/Read.hs, .stack-work/dist/x86_64-linux-ncurses6-nopie/Cabal-1.24.2.0/build/Data/Text/Lazy/Read.o )
 [44 of 44] Compiling Data.Text.Read   ( Data/Text/Read.hs, .stack-work/dist/x86_64-linux-ncurses6-nopie/Cabal-1.24.2.0/build/Data/Text/Read.o )
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-ghc: unable to decommit memory: Invalid argument
-Cabal-simple_mPHDZzAJ_1.24.2.0_ghc-8.0.2: unable to decommit memory: Invalid argument
 Installing library in
 /home/promethorn/.stack/snapshots/x86_64-linux-ncurses6-nopie/lts-9.9/8.0.2/lib/x86_64-linux-ghc-8.0.2/text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
-Cabal-simple_mPHDZzAJ_1.24.2.0_ghc-8.0.2: unable to decommit memory: Invalid argument
 Registering text-1.2.2.2...
